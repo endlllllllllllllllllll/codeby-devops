@@ -1,0 +1,153 @@
+Script started on 2024-06-14 11:48:20+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+[?2004hroot@lukyanov:/home/client# [7msudo update-alternatives --config java[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --config java
+[?2004lЕсть 2 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+* 0            /opt/jdk-11/bin/java                          2         автоматический режим
+  1            /opt/jdk-11/bin/java                          2         ручной режим
+  2            /usr/lib/jvm/java-17-openjdk-amd64/bin/java   1         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 1
+[?2004hroot@lukyanov:/home/client# [7msudo update-alternatives --config javac[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --config javac
+[?2004lЕсть 2 варианта для альтернативы javac (предоставляет /usr/bin/javac).
+
+  Выбор   Путь                                      Приор Состояние
+------------------------------------------------------------
+* 0            /opt/jdk-11/bin/javac                          2         автоматический режим
+  1            /opt/jdk-11/bin/javac                          2         ручной режим
+  2            /usr/lib/jvm/java-17-openjdk-amd64/bin/javac   1         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 1
+[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# [7mjava -version[27mjava -version
+[?2004lopenjdk version "11.0.20" 2023-07-18
+OpenJDK Runtime Environment Temurin-11.0.20+8 (build 11.0.20+8)
+OpenJDK 64-Bit Server VM Temurin-11.0.20+8 (build 11.0.20+8, mixed mode)
+[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# [7msudo update-alternatives --config java[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --config java
+[?2004lЕсть 2 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+  0            /opt/jdk-11/bin/java                          2         автоматический режим
+* 1            /opt/jdk-11/bin/java                          2         ручной режим
+  2            /usr/lib/jvm/java-17-openjdk-amd64/bin/java   1         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 2
+update-alternatives: используется /usr/lib/jvm/java-17-openjdk-amd64/bin/java для предоставления /usr/bin/java (java) в ручном режиме
+[?2004hroot@lukyanov:/home/client# [7msudo update-alternatives --config javac[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --config javac
+[?2004lЕсть 2 варианта для альтернативы javac (предоставляет /usr/bin/javac).
+
+  Выбор   Путь                                      Приор Состояние
+------------------------------------------------------------
+  0            /opt/jdk-11/bin/javac                          2         автоматический режим
+* 1            /opt/jdk-11/bin/javac                          2         ручной режим
+  2            /usr/lib/jvm/java-17-openjdk-amd64/bin/javac   1         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 2
+update-alternatives: используется /usr/lib/jvm/java-17-openjdk-amd64/bin/javac для предоставления /usr/bin/javac (javac) в ручном режиме
+[?2004hroot@lukyanov:/home/client# sudo update-alternatives --config javac[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pjava -version
+[?2004lopenjdk version "17.0.11" 2024-04-16
+OpenJDK Runtime Environment (build 17.0.11+9-Debian-1deb12u1)
+OpenJDK 64-Bit Server VM (build 17.0.11+9-Debian-1deb12u1, mixed mode, sharing)
+[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# ыгв[K[K[Ksd[Kudo ssh key-gen
+[?2004lssh: Could not resolve hostname key-gen: Name or service not known
+[?2004hroot@lukyanov:/home/client# sudo ssh key-gen -t rsa -b 4096
+[?2004lssh: Could not resolve hostname key-gen: Name or service not known
+[?2004hroot@lukyanov:/home/client# sudo ssh key-gen -t rsa -b 4096[C[1P
+[?2004lsudo: sshkey-gen: command not found
+[?2004hroot@lukyanov:/home/client# sudo sshkey-gen -t rsa -b 4096[1@-[C[C[C[C[1P[C[C[1P[1P[1P[1P[C[1P
+[?2004lGenerating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:XvSsdlqXiyjVEF1dw3Fl61BHGtbKbEkMAf1qdWnQr2M root@lukyanov
+The key's randomart image is:
++---[RSA 4096]----+
+|          .+o=*B@|
+|          . oo+*B|
+|          .. *o+o|
+|         ..o  @oo|
+|        S .oo+.+ |
+|       . ...+ E. |
+|        ..o.o.o. |
+|        .. = o . |
+|         .o . .  |
++----[SHA256]-----+
+[?2004hroot@lukyanov:/home/client# cat /root/.ssh/id_rsa.pub [K
+[?2004lssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDDtWD7RNbjSFHmNhJHSwSOayM9qX8vJsqIkkbHtBSRRrxUQVysp6F2MPz40KgX8Xa5Lkei2byPataebvKPJG8D/4xTXhHkbzuc+qVzhGRuJOw7VXL1ylaaVixJD0ap1QIgYmSdxL91wq7jck1jaII2qintIpXz0p/Z0pJnC4msVj1ReKVo28xWlKkG5S6tUA7wmMzVpprE0i3Oo6GO7iaDsZTR4oZJ0RxT9MFEWpVwo/vLHYnzLE1Qk+X0ca2qV9bcDeuLLuIWICF5/es2DL8IID1zo/GELQmajrXTU/BqinMQStoyLG55X1CzjUlTJ2qzxSh648UGBRJagH1doLZA06czjMWmZhzfBXai/utbpSEWrWYjgy+QDuR+Cwy041L4wsfG05iI6rwVj8TN3N8wsE+pytrEPxCghMdNLIJGfpv/abJ9oV+nqc+H6A8Y4iq9Zufb8qPC1IQ/vHiJzIPU33Iqp9BJZcC1+gOtirIut87bQSBLOo7Umfewov3hbzZFWVi8w8fmsKMtNQeMAqTkB/nl4TSO5/vD+fBVbNytDQS7bEDsh8YYmXQnlTe0XFibgE3x0X5CZLFeBOwLGgR3tZjQhwtRy1HbwGBTbXZ5wLpbukAnoEuEGJP8xqgLlpVYanYf8612kqNcXSzITMTNUKFGhOQNJVmU/jyaO6ZRBw== root@lukyanov
+[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# 
+[?2004l[?2004hroot@lukyanov:/home/client# [7mgit@github.com:endlllllllllllllllllll/codeby-devops.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit@github.com:endlllllllllllllllllll/codeby-devops.git
+[?2004lbash: git@github.com:endlllllllllllllllllll/codeby-devops.git: Нет такого файла или каталога
+[?2004hroot@lukyanov:/home/client# git@github.com:endlllllllllllllllllll/codeby-devops.gitsgit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csgit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chgit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C git@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lssh: Could not resolve hostname github.com:endlllllllllllllllllll/codeby-devops.git: Name or service not known
+[?2004hroot@lukyanov:/home/client# ssh -T git@github.com
+[?2004lThe authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi endlllllllllllllllllll! You've successfully authenticated, but GitHub does not provide shell access.
+[?2004hroot@lukyanov:/home/client# git clone [7mgit@github.com:endlllllllllllllllllll/codeby-devops.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit@github.com:endlllllllllllllllllll/codeby-devops.git
+[?2004lbash: git: команда не найдена
+[?2004hroot@lukyanov:/home/client# apt is[Knsta;; [K[K[Kll git
+[?2004lЧтение списков пакетов… 0%Чтение списков пакетов… 100%Чтение списков пакетов… Готово
+Построение дерева зависимостей… 0%Построение дерева зависимостей… 0%Построение дерева зависимостей… 50%Построение дерева зависимостей… 50%Построение дерева зависимостей… Готово
+Чтение информации о состоянии… 0%             Чтение информации о состоянии… 0%Чтение информации о состоянии… Готово
+Будут установлены следующие дополнительные пакеты:
+  git-man liberror-perl patch
+Предлагаемые пакеты:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn ed
+  diffutils-doc
+Следующие НОВЫЕ пакеты будут установлены:
+  git git-man liberror-perl patch
+Обновлено 0 пакетов, установлено 4 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+Необходимо скачать 9 377 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 48,0 MB.
+Хотите продолжить? [Д/н] y
+[33m0% [Обработка][0m                       Пол:1 http://ftp.ru.debian.org/debian bookworm/main amd64 liberror-perl all 0.17029-2 [29,0 kB]
+[33m0% [1 liberror-perl 3 875 B/29,0 kB 13%][0m[33m                                          5% [Обработка][0m                       Пол:2 http://ftp.ru.debian.org/debian bookworm/main amd64 git-man all 1:2.39.2-1.1 [2 049 kB]
+[33m5% [2 git-man 3 871 B/2 049 kB 0%][0m[33m28% [Ожидание заголовков][0m                                           Пол:3 http://ftp.ru.debian.org/debian bookworm/main amd64 git amd64 1:2.39.2-1.1 [7 171 kB]
+[33m                                           28% [3 git 43,0 kB/7 171 kB 1%][0m[33m60% [3 git 3 795 kB/7 171 kB 53%][0m                                     Пол:4 http://ftp.ru.debian.org/debian bookworm/main amd64 patch amd64 2.7.6-7 [128 kB]
+[33m                                     94% [4 patch 23,8 kB/128 kB 19%][0m[33m                                100% [Обработка][0m                         Получено 9 377 kB за 2с (5 816 kB/s)
+
+7[0;29r8[1AВыбор ранее не выбранного пакета liberror-perl.
+(Чтение базы данных … (Чтение базы данных … 5%(Чтение базы данных … 10%(Чтение базы данных … 15%(Чтение базы данных … 20%(Чтение базы данных … 25%(Чтение базы данных … 30%(Чтение базы данных … 35%(Чтение базы данных … 40%(Чтение базы данных … 45%(Чтение базы данных … 50%(Чтение базы данных … 55%(Чтение базы данных … 60%(Чтение базы данных … 65%(Чтение базы данных … 70%(Чтение базы данных … 75%(Чтение базы данных … 80%(Чтение базы данных … 85%(Чтение базы данных … 90%(Чтение базы данных … 95%(Чтение базы данных … 100%(Чтение базы данных … на данный момент установлено 156355 файлов и каталогов.)
+Подготовка к распаковке …/liberror-perl_0.17029-2_all.deb …
+7[30;0f[42m[30mХод выполнения: [  0%][49m[39m [............................................................................................] 87[30;0f[42m[30mХод выполнения: [  6%][49m[39m [#####.......................................................................................] 8Распаковывается liberror-perl (0.17029-2) …
+7[30;0f[42m[30mХод выполнения: [ 12%][49m[39m [##########..................................................................................] 8Выбор ранее не выбранного пакета git-man.
+Подготовка к распаковке …/git-man_1%3a2.39.2-1.1_all.deb …
+7[30;0f[42m[30mХод выполнения: [ 18%][49m[39m [################............................................................................] 8Распаковывается git-man (1:2.39.2-1.1) …
+7[30;0f[42m[30mХод выполнения: [ 24%][49m[39m [#####################.......................................................................] 8Выбор ранее не выбранного пакета git.
+Подготовка к распаковке …/git_1%3a2.39.2-1.1_amd64.deb …
+7[30;0f[42m[30mХод выполнения: [ 29%][49m[39m [###########################.................................................................] 8Распаковывается git (1:2.39.2-1.1) …
+7[30;0f[42m[30mХод выполнения: [ 35%][49m[39m [################################............................................................] 8Выбор ранее не выбранного пакета patch.
+Подготовка к распаковке …/patch_2.7.6-7_amd64.deb …
+7[30;0f[42m[30mХод выполнения: [ 41%][49m[39m [#####################################.......................................................] 8Распаковывается patch (2.7.6-7) …
+7[30;0f[42m[30mХод выполнения: [ 47%][49m[39m [###########################################.................................................] 8Настраивается пакет liberror-perl (0.17029-2) …
+7[30;0f[42m[30mХод выполнения: [ 53%][49m[39m [################################################............................................] 87[30;0f[42m[30mХод выполнения: [ 59%][49m[39m [######################################################......................................] 8Настраивается пакет patch (2.7.6-7) …
+7[30;0f[42m[30mХод выполнения: [ 65%][49m[39m [###########################################################.................................] 87[30;0f[42m[30mХод выполнения: [ 71%][49m[39m [################################################################............................] 8Настраивается пакет git-man (1:2.39.2-1.1) …
+7[30;0f[42m[30mХод выполнения: [ 76%][49m[39m [######################################################################......................] 87[30;0f[42m[30mХод выполнения: [ 82%][49m[39m [###########################################################################.................] 8Настраивается пакет git (1:2.39.2-1.1) …
+7[30;0f[42m[30mХод выполнения: [ 88%][49m[39m [#################################################################################...........] 87[30;0f[42m[30mХод выполнения: [ 94%][49m[39m [######################################################################################......] 8Обрабатываются триггеры для man-db (2.11.2-2) …
+
+7[0;30r8[1A[J[?2004hroot@lukyanov:/home/client# [7mgit@github.com:endlllllllllllllllllll/codeby-devops.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit@github.com:endlllllllllllllllllll/codeby-devops.git[Cgit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cigit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctgit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C git@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccgit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clgit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cogit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cngit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cegit@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C git@github.com:endlllllllllllllllllll/codeby-devops.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lКлонирование в «codeby-devops»...
+remote: Enumerating objects: 57, done.[K
+remote: Counting objects:   1% (1/57)[Kremote: Counting objects:   3% (2/57)[Kremote: Counting objects:   5% (3/57)[Kremote: Counting objects:   7% (4/57)[Kremote: Counting objects:   8% (5/57)[Kremote: Counting objects:  10% (6/57)[Kremote: Counting objects:  12% (7/57)[Kremote: Counting objects:  14% (8/57)[Kremote: Counting objects:  15% (9/57)[Kremote: Counting objects:  17% (10/57)[Kremote: Counting objects:  19% (11/57)[Kremote: Counting objects:  21% (12/57)[Kremote: Counting objects:  22% (13/57)[Kremote: Counting objects:  24% (14/57)[Kremote: Counting objects:  26% (15/57)[Kremote: Counting objects:  28% (16/57)[Kremote: Counting objects:  29% (17/57)[Kremote: Counting objects:  31% (18/57)[Kremote: Counting objects:  33% (19/57)[Kremote: Counting objects:  35% (20/57)[Kremote: Counting objects:  36% (21/57)[Kremote: Counting objects:  38% (22/57)[Kremote: Counting objects:  40% (23/57)[Kremote: Counting objects:  42% (24/57)[Kremote: Counting objects:  43% (25/57)[Kremote: Counting objects:  45% (26/57)[Kremote: Counting objects:  47% (27/57)[Kremote: Counting objects:  49% (28/57)[Kremote: Counting objects:  50% (29/57)[Kremote: Counting objects:  52% (30/57)[Kremote: Counting objects:  54% (31/57)[Kremote: Counting objects:  56% (32/57)[Kremote: Counting objects:  57% (33/57)[Kremote: Counting objects:  59% (34/57)[Kremote: Counting objects:  61% (35/57)[Kremote: Counting objects:  63% (36/57)[Kremote: Counting objects:  64% (37/57)[Kremote: Counting objects:  66% (38/57)[Kremote: Counting objects:  68% (39/57)[Kremote: Counting objects:  70% (40/57)[Kremote: Counting objects:  71% (41/57)[Kremote: Counting objects:  73% (42/57)[Kremote: Counting objects:  75% (43/57)[Kremote: Counting objects:  77% (44/57)[Kremote: Counting objects:  78% (45/57)[Kremote: Counting objects:  80% (46/57)[Kremote: Counting objects:  82% (47/57)[Kremote: Counting objects:  84% (48/57)[Kremote: Counting objects:  85% (49/57)[Kremote: Counting objects:  87% (50/57)[Kremote: Counting objects:  89% (51/57)[Kremote: Counting objects:  91% (52/57)[Kremote: Counting objects:  92% (53/57)[Kremote: Counting objects:  94% (54/57)[Kremote: Counting objects:  96% (55/57)[Kremote: Counting objects:  98% (56/57)[Kremote: Counting objects: 100% (57/57)[Kremote: Counting objects: 100% (57/57), done.[K
+remote: Compressing objects:   2% (1/35)[Kremote: Compressing objects:   5% (2/35)[Kremote: Compressing objects:   8% (3/35)[Kremote: Compressing objects:  11% (4/35)[Kremote: Compressing objects:  14% (5/35)[Kremote: Compressing objects:  17% (6/35)[Kremote: Compressing objects:  20% (7/35)[Kremote: Compressing objects:  22% (8/35)[Kremote: Compressing objects:  25% (9/35)[Kremote: Compressing objects:  28% (10/35)[Kremote: Compressing objects:  31% (11/35)[Kremote: Compressing objects:  34% (12/35)[Kremote: Compressing objects:  37% (13/35)[Kremote: Compressing objects:  40% (14/35)[Kremote: Compressing objects:  42% (15/35)[Kremote: Compressing objects:  45% (16/35)[Kremote: Compressing objects:  48% (17/35)[Kremote: Compressing objects:  51% (18/35)[Kremote: Compressing objects:  54% (19/35)[Kremote: Compressing objects:  57% (20/35)[Kremote: Compressing objects:  60% (21/35)[Kremote: Compressing objects:  62% (22/35)[Kremote: Compressing objects:  65% (23/35)[Kremote: Compressing objects:  68% (24/35)[Kremote: Compressing objects:  71% (25/35)[Kremote: Compressing objects:  74% (26/35)[Kremote: Compressing objects:  77% (27/35)[Kremote: Compressing objects:  80% (28/35)[Kremote: Compressing objects:  82% (29/35)[Kremote: Compressing objects:  85% (30/35)[Kremote: Compressing objects:  88% (31/35)[Kremote: Compressing objects:  91% (32/35)[Kremote: Compressing objects:  94% (33/35)[Kremote: Compressing objects:  97% (34/35)[Kremote: Compressing objects: 100% (35/35)[Kremote: Compressing objects: 100% (35/35), done.[K
+remote: Total 57 (delta 6), reused 41 (delta 3), pack-reused 0[K
+Получение объектов:   1% (1/57)Получение объектов:   3% (2/57)Получение объектов:   5% (3/57)Получение объектов:   7% (4/57)Получение объектов:   8% (5/57)Получение объектов:  10% (6/57)Получение объектов:  12% (7/57)Получение объектов:  14% (8/57)Получение объектов:  15% (9/57)Получение объектов:  17% (10/57)Получение объектов:  19% (11/57)Получение объектов:  21% (12/57)Получение объектов:  22% (13/57)Получение объектов:  24% (14/57)Получение объектов:  26% (15/57)Получение объектов:  28% (16/57)Получение объектов:  29% (17/57)Получение объектов:  31% (18/57)Получение объектов:  33% (19/57)Получение объектов:  35% (20/57)Получение объекто
