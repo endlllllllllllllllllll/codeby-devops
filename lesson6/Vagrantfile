@@ -1,0 +1,29 @@
+Vagrant.configure("2") do |config|
+  # Настройка сервера
+  config.vm.define "server" do |server|
+    server.vm.box = "jammy-server"
+    server.vm.network "private_network", ip: "192.168.56.10"
+    server.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y openssh-server
+      mkdir -p /home/vagrant/.ssh
+      cp /vagrant/server_key.pub /home/vagrant/.ssh/authorized_keys
+      chown -R vagrant:vagrant /home/vagrant/.ssh
+      chmod 600 /home/vagrant/.ssh/authorized_keys
+    SHELL
+  end
+
+  # Настройка клиента
+  config.vm.define "client" do |client|
+    client.vm.box = "jammy-server"
+    client.vm.network "private_network", ip: "192.168.56.11"
+    client.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y openssh-client
+      mkdir -p /home/vagrant/.ssh
+      cp /vagrant/server_key /home/vagrant/.ssh/
+      chown -R vagrant:vagrant /home/vagrant/.ssh
+      chmod 600 /home/vagrant/.ssh/server_key
+    SHELL
+  end
+end
