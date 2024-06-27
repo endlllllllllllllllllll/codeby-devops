@@ -1,0 +1,44 @@
+Script started on 2024-06-14 12:22:36+03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="23"]
+[?2004hroot@lukyanov:/home/client/codeby-devops# exit[K[K[K[K[7msudo systemctl stop nginx[27m
+[7msudo systemctl disable nginx[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl stop nginx
+sudo systemctl disable nginx
+[A
+[?2004lSynchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable nginx
+Removed "/etc/systemd/system/multi-user.target.wants/nginx.service".
+[?2004hroot@lukyanov:/home/client/codeby-devops# [7msudo nano /etc/systemd/system/nginx.service[27msudo nano /etc/systemd/system/nginx.service
+[?2004l[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;55H(B[0;7m[ Чтение… ](B[m[21;50H(B[0;7m[ Прочитано 15 строк ](B[m[H(B[0;7m  GNU nano 7.2                                /etc/systemd/system/nginx.service                                         [1;119H(B[m[22d(B[0;7m^G(B[m Справка     (B[0;7m^O(B[m Записать    (B[0;7m^W(B[m Поиск[46G(B[0;7m^K(B[m Вырезать    (B[0;7m^T(B[m Выполнить   (B[0;7m^C(B[m Позиция     (B[0;7mM-U(B[m Отмена     (B[0;7mM-A(B[m Установить[23d(B[0;7m^X(B[m Выход[16G(B[0;7m^R(B[m ЧитФайл     (B[0;7m^\(B[m Замена[46G(B[0;7m^U(B[m Вставить    (B[0;7m^J(B[m Выровнять   (B[0;7m^/(B[m К строке    (B[0;7mM-E(B[m Повтор     (B[0;7mM-6(B[m Копировать[2d(B[0;1m[32m[Unit][3d[39m(B[mDescription=The NGINX HTTP and reverse proxy server[4dAfter=network.target[5dWants=network-online.target[7d(B[0;1m[32m[Service][8d[39m(B[mExecStartPre=/usr/sbin/nginx -t[9dExecStart=/usr/sbin/nginx[10dExecReload=/usr/sbin/nginx -s reload[11dExecStop=/bin/kill -s QUIT $MAINPID[12dPIDFile=/run/nginx.pid[13dRestart=always[15d(B[0;1m[32m[Install][16d[39m(B[mWantedBy=multi-user.target[2d[?12l[?25h[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l[?2004hroot@lukyanov:/home/client/codeby-devops# [7msudo systemctl enable nginx[27m
+[7msudo systemctl start nginx[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl enable nginx
+sudo systemctl start nginx
+[A
+[?2004lSynchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable nginx
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /etc/systemd/system/nginx.service.
+[?2004hroot@lukyanov:/home/client/codeby-devops# [7msudo systemctl status nginx[27msudo systemctl status nginx
+[?2004l[?1h=[0;1;32m●[0m nginx.service - The NGINX HTTP and reverse proxy server[m
+     Loaded: loaded (]8;;file://lukyanov/etc/systemd/system/nginx.service/etc/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Fri 2024-06-14 12:23:01 MSK; 9s ago[m
+    Process: 9050 ExecStartPre=/usr/sbin/nginx -t (code=exited, status=0/SUCCESS)[m
+   Main PID: 9052 (nginx)[m
+      Tasks: 7 (limit: 4622)[m
+     Memory: 4.9M[m
+        CPU: 22ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─[0;38;5;245m9052 "nginx: master process /usr/sbin/nginx"[0m[m
+             ├─[0;38;5;245m9053 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m9054 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m9055 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m9056 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m9057 "nginx: worker process"[0m[m
+             └─[0;38;5;245m9058 "nginx: worker process"[0m[m
+[m
+июн 14 12:23:01 lukyanov systemd[1]: Starting nginx.service - The NGINX HTTP and reverse proxy server...[m
+июн 14 12:23:01 lukyanov nginx[9050]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok[m
+июн 14 12:23:01 lukyanov nginx[9050]: nginx: configuration file /etc/nginx/nginx.conf test is successful[m
+июн 14 12:23:01 lukyanov systemd[1]: Started nginx.service - The NGINX HTTP and reverse proxy server.[m
+[K[?1l>[?2004hroot@lukyanov:/home/client/codeby-devops# [7mexit[27mexit
+[?2004lexit
+
+Script done on 2024-06-14 12:23:17+03:00 [COMMAND_EXIT_CODE="0"]
